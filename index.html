@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">COUNTRIES</h1>
+    <div class="input-wrapper">
+        <div class="all-title">
+            <label for="all">All</label>
+            <input type="radio" checked="true" name="type" id="all">
+        </div>
+        <div class="search-title">
+            <label for="search">Search</label>
+            <input type="radio" name="type" id="search">
+        </div>
+    </div>
+
+    <div class="search-wrapper hidden">
+        <div class="search-content">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="submit">Search</button>
+        </div>
+
+
+        <div class="result hidden">
+            <div class="result-wrapper">
+                <div class="subtitle">
+                    <p id="name"></p>
+                    <img id="image" src="" alt="">
+                </div>
+                <div class="overview">
+                    <p id="languages"></p>
+                    <p id="currency"></p>
+                    <p id="capital"></p>
+                    <a id="map" target="_blank" href="">Google Map</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
