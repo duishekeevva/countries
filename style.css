@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
 }
 
 .container {
@@ -34,6 +35,12 @@ img {
     box-shadow: 2px 10px 54px 2px rgba(34, 60, 80, 0.2);
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
 .col-4 {
     width: 33.33%;
     padding: 15px;
@@ -44,7 +51,7 @@ img {
 }
 
 .title {
-    text-align: center;
+    margin: 15px;
 }
 
 label {
@@ -61,17 +68,33 @@ label:hover {
 
 .input-wrapper {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     margin-left: 15px;
 }
 
+.all-title, .search-title {
+    display: flex;
+    gap: 10px;
+}
+
 .all-title label {
     text-align: center;
-    padding-right: 35px;
+    padding-right: 43px;
+}
+
+.result-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .search-wrapper {
     margin-left: 15px;
+}
+
+.search-content {
+    margin-bottom: 15px;
 }
 
 #searchInput {
@@ -93,40 +116,48 @@ label:hover {
 }
 
 #name {
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bolder;
-}
-
-.result-wrapper {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
 }
 
 .subtitle {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
-.overview {
-    padding-top: 35px;
+.about-country {
+    display: flex;
+    gap: 80px;
+}
+
+.overview, .weather {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 6px;
+    font-size: 16px;
 }
 
 a {
-    padding: 5px 10px;
-    background-color: #e7dede;
     text-decoration: none;
     color: black;
-    border: 1px solid gray;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-a:hover {
-    background-color: #a4a3a3;
+#map {
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#map:hover {
+    background-color: #cccccc;
+}
+
+#image-search {
+    width: 500px;
 }
 
 
